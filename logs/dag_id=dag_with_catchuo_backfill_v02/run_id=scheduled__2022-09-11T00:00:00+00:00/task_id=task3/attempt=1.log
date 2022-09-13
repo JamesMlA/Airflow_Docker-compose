@@ -1,0 +1,28 @@
+[2022-09-12T19:50:55.953+0000] {taskinstance.py:1171} INFO - Dependencies all met for <TaskInstance: dag_with_catchuo_backfill_v02.task3 scheduled__2022-09-11T00:00:00+00:00 [queued]>
+[2022-09-12T19:50:55.972+0000] {taskinstance.py:1171} INFO - Dependencies all met for <TaskInstance: dag_with_catchuo_backfill_v02.task3 scheduled__2022-09-11T00:00:00+00:00 [queued]>
+[2022-09-12T19:50:55.972+0000] {taskinstance.py:1368} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-12T19:50:55.973+0000] {taskinstance.py:1369} INFO - Starting attempt 1 of 6
+[2022-09-12T19:50:55.973+0000] {taskinstance.py:1370} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-12T19:50:55.994+0000] {taskinstance.py:1389} INFO - Executing <Task(BashOperator): task3> on 2022-09-11 00:00:00+00:00
+[2022-09-12T19:50:56.002+0000] {standard_task_runner.py:52} INFO - Started process 321 to run task
+[2022-09-12T19:50:56.005+0000] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'dag_with_catchuo_backfill_v02', 'task3', 'scheduled__2022-09-11T00:00:00+00:00', '--job-id', '6', '--raw', '--subdir', 'DAGS_FOLDER/dag_with_catchup_and_blackfill.py', '--cfg-path', '/tmp/tmp8hkutoz2', '--error-file', '/tmp/tmp2860nrnz']
+[2022-09-12T19:50:56.006+0000] {standard_task_runner.py:80} INFO - Job 6: Subtask task3
+[2022-09-12T19:50:56.141+0000] {task_command.py:371} INFO - Running <TaskInstance: dag_with_catchuo_backfill_v02.task3 scheduled__2022-09-11T00:00:00+00:00 [running]> on host d3a375509695
+[2022-09-12T19:50:56.277+0000] {taskinstance.py:1583} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=Ancordss
+AIRFLOW_CTX_DAG_ID=dag_with_catchuo_backfill_v02
+AIRFLOW_CTX_TASK_ID=task3
+AIRFLOW_CTX_EXECUTION_DATE=2022-09-11T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-09-11T00:00:00+00:00
+[2022-09-12T19:50:56.278+0000] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2022-09-12T19:50:56.278+0000] {subprocess.py:74} INFO - Running command: ['/bin/bash', '-c', 'git --version']
+[2022-09-12T19:50:56.294+0000] {subprocess.py:85} INFO - Output:
+[2022-09-12T19:50:56.299+0000] {subprocess.py:92} INFO - git version 2.30.2
+[2022-09-12T19:50:56.300+0000] {subprocess.py:96} INFO - Command exited with return code 0
+[2022-09-12T19:50:56.342+0000] {taskinstance.py:1412} INFO - Marking task as SUCCESS. dag_id=dag_with_catchuo_backfill_v02, task_id=task3, execution_date=20220911T000000, start_date=20220912T195055, end_date=20220912T195056
+[2022-09-12T19:50:56.602+0000] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-09-12T19:50:56.661+0000] {local_task_job.py:279} INFO - 0 downstream tasks scheduled from follow-on schedule check

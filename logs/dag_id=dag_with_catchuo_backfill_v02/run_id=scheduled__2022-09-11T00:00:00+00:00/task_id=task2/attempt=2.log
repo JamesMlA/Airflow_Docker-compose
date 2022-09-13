@@ -1,0 +1,72 @@
+[2022-09-12T19:56:00.783+0000] {taskinstance.py:1171} INFO - Dependencies all met for <TaskInstance: dag_with_catchuo_backfill_v02.task2 scheduled__2022-09-11T00:00:00+00:00 [queued]>
+[2022-09-12T19:56:00.799+0000] {taskinstance.py:1171} INFO - Dependencies all met for <TaskInstance: dag_with_catchuo_backfill_v02.task2 scheduled__2022-09-11T00:00:00+00:00 [queued]>
+[2022-09-12T19:56:00.799+0000] {taskinstance.py:1368} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-12T19:56:00.800+0000] {taskinstance.py:1369} INFO - Starting attempt 2 of 6
+[2022-09-12T19:56:00.800+0000] {taskinstance.py:1370} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-12T19:56:00.819+0000] {taskinstance.py:1389} INFO - Executing <Task(BashOperator): task2> on 2022-09-11 00:00:00+00:00
+[2022-09-12T19:56:00.825+0000] {standard_task_runner.py:52} INFO - Started process 603 to run task
+[2022-09-12T19:56:00.829+0000] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'dag_with_catchuo_backfill_v02', 'task2', 'scheduled__2022-09-11T00:00:00+00:00', '--job-id', '10', '--raw', '--subdir', 'DAGS_FOLDER/dag_with_catchup_and_blackfill.py', '--cfg-path', '/tmp/tmprim_sna8', '--error-file', '/tmp/tmpxto_s28o']
+[2022-09-12T19:56:00.829+0000] {standard_task_runner.py:80} INFO - Job 10: Subtask task2
+[2022-09-12T19:56:00.914+0000] {task_command.py:371} INFO - Running <TaskInstance: dag_with_catchuo_backfill_v02.task2 scheduled__2022-09-11T00:00:00+00:00 [running]> on host d3a375509695
+[2022-09-12T19:56:01.015+0000] {taskinstance.py:1583} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=Ancordss
+AIRFLOW_CTX_DAG_ID=dag_with_catchuo_backfill_v02
+AIRFLOW_CTX_TASK_ID=task2
+AIRFLOW_CTX_EXECUTION_DATE=2022-09-11T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=2
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-09-11T00:00:00+00:00
+[2022-09-12T19:56:01.016+0000] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2022-09-12T19:56:01.017+0000] {subprocess.py:74} INFO - Running command: ['/bin/bash', '-c', 'liquibase --version']
+[2022-09-12T19:56:01.033+0000] {subprocess.py:85} INFO - Output:
+[2022-09-12T19:56:02.356+0000] {subprocess.py:92} INFO - ####################################################
+[2022-09-12T19:56:02.356+0000] {subprocess.py:92} INFO - ##   _     _             _ _                      ##
+[2022-09-12T19:56:02.356+0000] {subprocess.py:92} INFO - ##  | |   (_)           (_) |                     ##
+[2022-09-12T19:56:02.357+0000] {subprocess.py:92} INFO - ##  | |    _  __ _ _   _ _| |__   __ _ ___  ___   ##
+[2022-09-12T19:56:02.357+0000] {subprocess.py:92} INFO - ##  | |   | |/ _` | | | | | '_ \ / _` / __|/ _ \  ##
+[2022-09-12T19:56:02.357+0000] {subprocess.py:92} INFO - ##  | |___| | (_| | |_| | | |_) | (_| \__ \  __/  ##
+[2022-09-12T19:56:02.357+0000] {subprocess.py:92} INFO - ##  \_____/_|\__, |\__,_|_|_.__/ \__,_|___/\___|  ##
+[2022-09-12T19:56:02.358+0000] {subprocess.py:92} INFO - ##              | |                               ##
+[2022-09-12T19:56:02.358+0000] {subprocess.py:92} INFO - ##              |_|                               ##
+[2022-09-12T19:56:02.358+0000] {subprocess.py:92} INFO - ##                                                ##
+[2022-09-12T19:56:02.359+0000] {subprocess.py:92} INFO - ##  Get documentation at docs.liquibase.com       ##
+[2022-09-12T19:56:02.359+0000] {subprocess.py:92} INFO - ##  Get certified courses at learn.liquibase.com  ##
+[2022-09-12T19:56:02.359+0000] {subprocess.py:92} INFO - ##  Free schema change activity reports at        ##
+[2022-09-12T19:56:02.359+0000] {subprocess.py:92} INFO - ##      https://hub.liquibase.com                 ##
+[2022-09-12T19:56:02.360+0000] {subprocess.py:92} INFO - ##                                                ##
+[2022-09-12T19:56:02.360+0000] {subprocess.py:92} INFO - ####################################################
+[2022-09-12T19:56:02.360+0000] {subprocess.py:92} INFO - Starting Liquibase at 19:56:02 (version 4.15.0 #4001 built at 2022-08-05 16:17+0000)
+[2022-09-12T19:56:02.361+0000] {subprocess.py:92} INFO - Liquibase Home: /opt/***/liquibase
+[2022-09-12T19:56:02.361+0000] {subprocess.py:92} INFO - Java Home /usr/lib/jvm/java-11-openjdk-amd64 (Version 11.0.16)
+[2022-09-12T19:56:02.361+0000] {subprocess.py:92} INFO - Libraries:
+[2022-09-12T19:56:02.361+0000] {subprocess.py:92} INFO - - internal/lib/commons-collections4.jar: Apache Commons Collections 4.4.0 By The Apache Software Foundation
+[2022-09-12T19:56:02.362+0000] {subprocess.py:92} INFO - - internal/lib/commons-lang3.jar: Apache Commons Lang 3.12.0 By The Apache Software Foundation
+[2022-09-12T19:56:02.362+0000] {subprocess.py:92} INFO - - internal/lib/commons-text.jar: Apache Commons Text 1.9.0 By The Apache Software Foundation
+[2022-09-12T19:56:02.362+0000] {subprocess.py:92} INFO - - internal/lib/connector-api.jar: J2EE Connector Architecture API Specification 1.5 By Sun Microsystems, Inc.
+[2022-09-12T19:56:02.362+0000] {subprocess.py:92} INFO - - internal/lib/h2.jar: H2 Database Engine 2.1.214 By H2 Group
+[2022-09-12T19:56:02.363+0000] {subprocess.py:92} INFO - - internal/lib/hsqldb.jar: HSQLDB 2.5.2 By The HSQL Development Group
+[2022-09-12T19:56:02.363+0000] {subprocess.py:92} INFO - - internal/lib/jaxb-api.jar: jaxb-api 2.3.1 By Oracle Corporation
+[2022-09-12T19:56:02.363+0000] {subprocess.py:92} INFO - - internal/lib/jaxb-core.jar: JAXB Core 4.0.0 By Eclipse Foundation
+[2022-09-12T19:56:02.363+0000] {subprocess.py:92} INFO - - internal/lib/jaxb-runtime.jar: JAXB Runtime 4.0.0 By Eclipse Foundation
+[2022-09-12T19:56:02.364+0000] {subprocess.py:92} INFO - - internal/lib/jaybird.jar: Jaybird 4.0.6.java8 (build: variant=jaybird tag=v4.0.6 date=202204271624) By Firebird project
+[2022-09-12T19:56:02.364+0000] {subprocess.py:92} INFO - - internal/lib/jcc.jar: IBM JCC JDBC 4 Driver 1.4.0 By IBM
+[2022-09-12T19:56:02.364+0000] {subprocess.py:92} INFO - - internal/lib/liquibase-commercial.jar: Commercial Liquibase Functionality 4.15.0 By Liquibase
+[2022-09-12T19:56:02.365+0000] {subprocess.py:92} INFO - - internal/lib/mariadb-java-client.jar: mariadb-java-client 3.0.6 By mariadb.com
+[2022-09-12T19:56:02.365+0000] {subprocess.py:92} INFO - - internal/lib/mssql-jdbc.jar: Microsoft JDBC Driver for SQL Server 10.2.1 By Microsoft Corporation
+[2022-09-12T19:56:02.365+0000] {subprocess.py:92} INFO - - internal/lib/ojdbc8.jar: JDBC 21.6.0.0.1 By Oracle Corporation
+[2022-09-12T19:56:02.365+0000] {subprocess.py:92} INFO - - internal/lib/opencsv.jar: opencsv 5.6.0
+[2022-09-12T19:56:02.366+0000] {subprocess.py:92} INFO - - internal/lib/picocli.jar: picocli 4.6.3 By Remko Popma
+[2022-09-12T19:56:02.366+0000] {subprocess.py:92} INFO - - internal/lib/postgresql.jar: PostgreSQL JDBC Driver 42.4.1 By PostgreSQL Global Development Group
+[2022-09-12T19:56:02.366+0000] {subprocess.py:92} INFO - - internal/lib/snakeyaml.jar: SnakeYAML 1.30.0
+[2022-09-12T19:56:02.366+0000] {subprocess.py:92} INFO - - internal/lib/snowflake-jdbc.jar: snowflake-jdbc 3.13.21
+[2022-09-12T19:56:02.366+0000] {subprocess.py:92} INFO - - internal/lib/sqlite-jdbc.jar: SQLite JDBC 3.36.0.3
+[2022-09-12T19:56:02.367+0000] {subprocess.py:92} INFO - 
+[2022-09-12T19:56:02.367+0000] {subprocess.py:92} INFO - 
+[2022-09-12T19:56:02.367+0000] {subprocess.py:92} INFO - Liquibase Version: 4.15.0
+[2022-09-12T19:56:02.368+0000] {subprocess.py:92} INFO - Liquibase Community 4.15.0 by Liquibase
+[2022-09-12T19:56:02.380+0000] {subprocess.py:96} INFO - Command exited with return code 0
+[2022-09-12T19:56:02.421+0000] {taskinstance.py:1412} INFO - Marking task as SUCCESS. dag_id=dag_with_catchuo_backfill_v02, task_id=task2, execution_date=20220911T000000, start_date=20220912T195600, end_date=20220912T195602
+[2022-09-12T19:56:02.466+0000] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-09-12T19:56:02.518+0000] {local_task_job.py:279} INFO - 1 downstream tasks scheduled from follow-on schedule check
