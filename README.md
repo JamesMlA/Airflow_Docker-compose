@@ -1,6 +1,6 @@
 ### Dockerfile and Docker-compose AIRFLOW for Databuddies LLC
 
-#### preriquerement
+#### requirements
 
 - docker && docker-compose
 
@@ -22,6 +22,6 @@ pass: airflow
 this Airflow image contain git and liquibase to start creating dags and building pipelines
 
 
-make sure clone this repositori on main path
+make sure clone this repositorie on main path
 
 
