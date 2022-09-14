@@ -12,12 +12,12 @@ default_args = {
 
 with DAG(
     default_args=default_args,
-    dag_id="dag_with_cron_expression_v03",
+    dag_id="dag_git_v03",
     start_date=datetime(2022,9,1),
     schedule_interval='1 * * * *'
 ) as dag:
     task1 = BashOperator(
-        task_id='pulling repository',
+        task_id='pulling_repository',
         bash_command='git pull ~/dev/Airflow_Docker-compose'
     )
     task1
