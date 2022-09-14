@@ -23,12 +23,12 @@ with DAG(
     )
 
     task2 = BashOperator(
-        task_id='is_liquibase_installed?',
+        task_id='is_liquibase_installed',
         bash_command='liquibase --version'
     )
 
     task3 = BashOperator(
-        task_id='is_git_installed?',
+        task_id='is_git_installed',
         bash_command='git --version'
 
     )
