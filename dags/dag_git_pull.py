@@ -17,9 +17,7 @@ with DAG(
     schedule_interval='1 * * * *'
 ) as dag:
     task1 = BashOperator(
-        task_id='task1',
-        bash_command='echo dag with cron expression!'
+        task_id='pulling repository',
+        bash_command='git pull ~/dev/Airflow_Docker-compose'
     )
     task1
-
-    #contrab.guru
