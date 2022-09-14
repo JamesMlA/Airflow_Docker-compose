@@ -18,17 +18,17 @@ with DAG(
 ) as dag:
 
     task1 = BashOperator(
-        task_id='imprimiendo_en_pantalla',
+        task_id='print to shell with bash',
         bash_command='echo this is a simple bash command!'
     )
 
     task2 = BashOperator(
-        task_id='comprobando_version_liquibase',
+        task_id='is liquibase installed?',
         bash_command='liquibase --version'
     )
 
     task3 = BashOperator(
-        task_id='comprobando_version_git',
+        task_id='is git installed?',
         bash_command='git --version'
 
     )
