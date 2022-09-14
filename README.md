@@ -17,6 +17,12 @@ go and see at http://localhost:8080
 user: airflow
 pass: airflow
 
+## to stop all the repositories run
+
+```
+make clean
+```
+
 ### info
 
 this Airflow image contain git and liquibase to start creating dags and building pipelines

@@ -4,4 +4,4 @@ RUN:
 
 clean:
 	@docker-compose down 
-	@docker system prune
+	#@docker system prune
