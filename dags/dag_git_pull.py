@@ -18,6 +18,6 @@ with DAG(
 ) as dag:
     task1 = BashOperator(
         task_id='pulling_repository',
-        bash_command='git pull'
+        bash_command='(cd ~/Airflow_Docker-compose; git pull)'
     )
     task1
